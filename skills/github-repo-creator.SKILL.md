@@ -72,7 +72,7 @@ find "$PROJECT_DIR" -not -path '*/.git/*' \( \
 echo "=== 코드 내 시크릿 패턴 ==="
 grep -rn \
   -e 'sk-[a-zA-Z0-9]\{20,\}' \
-  -e 'ghp_[a-zA-Z0-9]\{20,\}' \
+  -e 'github_pat_example_pattern' \
   -e 'AKIA[A-Z0-9]\{16\}' \
   -e 'xox[baprs]-[a-zA-Z0-9-]\+' \
   --include="*.py" --include="*.js" --include="*.ts" \
